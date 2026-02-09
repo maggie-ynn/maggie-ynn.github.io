@@ -2,23 +2,23 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+title: Maggie Nannan Yan
+first_name: Maggie
+middle_name: Nannan
+last_name: Yan
+email: nannanyan.fudan@outlook.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Senior Electric Engineer and Dual-PhD Researcher specializing in high-voltage 
+  power systems, energy storage, and AI-driven smart grid solutions. 16+ years 
+  of experience in R&D project leadership and intelligent operations.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  © 2025 Nannan Yan. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: electric power systems, high voltage engineering, smart grid, energy storage, AI, renewable energy
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
-url: https://maggie-ynn.github.io # the base hostname & protocol for your site
+icon: ⚡  # electrical/power symbol
+url: https://maggie-ynn.github.io 
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -37,7 +37,7 @@ repo_trophies:
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
 # External service URLs for repository page
-# To use a different instance or service for displaying GitHub stats and trophies,
+# To use a different instance or service for displaying  stats and trophies,
 # update these URLs. These are used in the repository templates.
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
