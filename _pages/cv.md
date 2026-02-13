@@ -8,18 +8,6 @@ nav_order: 4
 
 <style>
 .cv-section {
-  margin-bottom: 2.5em;
-}
----
-layout: page
-permalink: /cv/
-title: Curriculum Vitae
-nav: true
-nav_order: 4
----
-
-<style>
-.cv-section {
   margin-bottom: 2.5em;/* 每个章节之间的间距 */
 }
 .cv-section h2 {
