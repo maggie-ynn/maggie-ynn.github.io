@@ -165,7 +165,11 @@
         {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
       {% endif %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% if entry.booktitle_url %}
+        {% capture entrytype %}<a href="{{ entry.booktitle_url }}" style="color: inherit;"><em>In {{ entry.booktitle }}</em></a>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% endif %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
