@@ -10,8 +10,6 @@ profile:
   image_circular: false
   more_info: >
     <p>Richmond Hill, ON, Canada</p>
-    <p><a href="mailto:nannanyan.fudan@outlook.com">nannanyan.fudan@outlook.com</a></p>
-    <p><a href="https://www.linkedin.com/in/maggie-yan-612a01385/">LinkedIn</a></p>
 
 selected_papers: false # set to true to show selected publications
 social: true # includes social icons at the bottom of the page
