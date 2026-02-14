@@ -17,7 +17,9 @@
               {{- site.last_name -}}
             {% endif %}
           {% else %}
-            {{- site.title -}}
+            {% assign _parts = site.title | split: ' ' %}
+            <span class="font-weight-bold">{{ _parts[0] }}</span>
+            {% for _p in _parts offset:1 %}{{ _p }}{% if forloop.last == false %} {% endif %}{% endfor %}
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
