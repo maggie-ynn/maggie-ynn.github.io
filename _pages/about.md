@@ -23,6 +23,8 @@ latest_posts:
   enabled: false
 ---
 
+Hey, thanks for stopping by! 👋
+
 I am a Senior Electric Engineer and Dual-PhD Researcher specializing in high-voltage power systems, energy storage integration, and AI-driven smart grid solutions. With 16+ years of experience in R&D leadership and utility-scale project management, I focus on bridging traditional power engineering with cutting-edge AI applications.
 
 **Key Focus Areas:**
