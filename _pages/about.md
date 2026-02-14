@@ -6,7 +6,7 @@ subtitle: Senior Electric Engineer | Dual-PhD Researcher | 16+ years in Power Sy
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic2.png
   image_circular: false
   more_info: >
     <p>Richmond Hill, ON, Canada</p>
