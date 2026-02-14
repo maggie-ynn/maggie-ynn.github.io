@@ -86,8 +86,15 @@
         {% endif %}
         {%- if author_is_self -%}
           <em>
-            {{- author.first }}
-            {{ author_last_html -}}
+            {%- if entry.scholar_url -%}
+              <a href="{{ entry.scholar_url }}" style="color: #d41159;">
+                {{- author.first }}
+                {{ author_last_html -}}
+              </a>
+            {%- else -%}
+              {{- author.first }}
+              {{ author_last_html -}}
+            {%- endif -%}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
@@ -152,7 +159,11 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% if entry.journal_url %}
+        {% capture entrytype %}<a href="{{ entry.journal_url }}" style="color: inherit;"><em>{{ entry.journal }}</em></a>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% endif %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
@@ -257,6 +268,9 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.url %}
+        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Link</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
