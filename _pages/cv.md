@@ -166,8 +166,7 @@ nav_order: 4
   <div class="education-item">
     <h3>
       <span class="position-title">Ph.D., Intelligent Electronic Information</span><br>
-      <span class="company-name">Fudan University, Shanghai</span><br>
-      <span class="date-range">2020</span>
+      <span class="company-name">Fudan University, Shanghai</span>
     </h3>
     <ul>
       <li>Ph.D. Candidate, Brain-Inspired Intelligence, Fudan University</li>
@@ -178,8 +177,7 @@ nav_order: 4
   <div class="education-item">
     <h3>
       <span class="position-title">Ph.D., High Voltage & Insulation</span><br>
-      <span class="company-name">Shanghai Jiao Tong University</span><br>
-      <span class="date-range">2012</span>
+      <span class="company-name">Shanghai Jiao Tong University</span>
     </h3>
     <ul>
       <li>Ph.D. in High Voltage & Insulation, Shanghai Jiao Tong University</li>
@@ -255,17 +253,10 @@ nav_order: 4
   </ul>
 </div>
 
-<!-- Personal Details Section -->
-<div class="cv-section">
-  <h2>Personal Details</h2>
-  <p>
-    <strong>Nationality:</strong> Chinese<br>
-    <strong>Visa status:</strong> Permanent resident
-  </p>
-</div>
+
 
 ---
 
 <p style="text-align: center; color: #6c757d; font-size: 0.9em; margin-top: 3em;">
-  <em>Last updated: February 2025</em>
+  <em>Last updated: March 2025</em>
 </p>
