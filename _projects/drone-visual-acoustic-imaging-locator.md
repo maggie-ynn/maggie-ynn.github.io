@@ -2,7 +2,7 @@
 layout: page
 title: Multi-modal Perception - Vision + Thermal - Equipment-level Diagnosis
 description: Vision and thermal fusion workflow for equipment-level diagnosis in complex substation environments.
-img: assets/img/project-cases/drone-advanced/drone-second-cover.png
+img: assets/img/project-cases/drone-advanced/drone-second-cover-updated.png
 importance: 2
 category: "5-drone & advanced"
 ---
