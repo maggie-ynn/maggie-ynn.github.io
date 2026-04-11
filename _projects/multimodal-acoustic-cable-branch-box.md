@@ -22,7 +22,3 @@ Cable branch box defects can be difficult to isolate quickly, especially when sy
 ## Outcomes and Impact
 
 The case improved speed and confidence in defect localization and helped reduce ambiguity during field troubleshooting. It also showed the operational value of converting non-visual sensing into engineering evidence that teams can act on immediately.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/multimodal-ai/acoustic-imaging-cable-branch-box-fault-location.pdf' | relative_url }})

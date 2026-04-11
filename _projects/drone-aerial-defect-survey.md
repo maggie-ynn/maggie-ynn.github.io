@@ -23,7 +23,3 @@ Inspection teams often gather imagery successfully but still need a structured r
 ## Outcomes and Impact
 
 The project improved visibility into asset condition, reduced the need for repeat site visits, and made remote collaboration more practical during defect review. It also helped transform aerial imagery from documentation into a decision-support asset.
-
-## Materials
-
-- [Preview project image]({{ '/assets/img/project-cases/drone-advanced/aerial-defect-survey.jpg' | relative_url }})

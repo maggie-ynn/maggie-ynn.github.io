@@ -22,7 +22,3 @@ In many utility inspections, a single sensing mode is not enough to confirm whet
 ## Outcomes and Impact
 
 The platform improved inspection efficiency and made defect verification more robust by reducing reliance on a single data source. It also supported faster field decisions by giving engineers multiple evidence channels in one pass.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/multimodal-ai/acoustic-infrared-integrated-imager.pdf' | relative_url }})

@@ -22,7 +22,3 @@ Utilities need inspection solutions that fit into real substation operations, no
 ## Outcomes and Impact
 
 The case strengthened digital inspection capability and clarified how connected monitoring can reduce manual inspection burden. It also provided a more scalable framework for inspection modernization across substation environments.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/smart-substation/smart-substation-inspection-solution.pdf' | relative_url }})

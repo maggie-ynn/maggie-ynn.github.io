@@ -22,7 +22,3 @@ Field diagnostics often produce fragmented outputs from different sensors, which
 ## Outcomes and Impact
 
 The project improved communication between sensing teams, operators, and maintenance decision makers by making diagnostic outputs easier to understand and compare. It also increased the practical value of multi-modal inspection by supporting clearer triage decisions.
-
-## Materials
-
-- [Preview project image]({{ '/assets/img/project-cases/multimodal-ai/multimodal-defect-visualization.jpg' | relative_url }})

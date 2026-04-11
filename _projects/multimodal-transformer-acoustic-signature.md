@@ -22,7 +22,3 @@ Acoustic signatures can provide valuable clues in transformer diagnostics, but t
 ## Outcomes and Impact
 
 The case improved the usability of acoustic information in transformer diagnostics and helped translate sensing results into more actionable maintenance insight. It also strengthened communication between technical specialists and field teams during anomaly review.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/multimodal-ai/transformer-acoustic-signature-analysis.pdf' | relative_url }})

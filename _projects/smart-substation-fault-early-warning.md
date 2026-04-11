@@ -22,7 +22,3 @@ Cable-fault events often create uncertainty not only about severity, but also ab
 ## Outcomes and Impact
 
 The project improved response speed and reduced uncertainty during cable fault handling by giving teams earlier and more actionable information. It also showed how monitoring outputs can be translated into a more practical event-response workflow.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/smart-substation/cable-fault-early-warning-localization.pdf' | relative_url }})

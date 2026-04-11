@@ -22,7 +22,3 @@ As inspection programs scale, utilities need more than isolated devices or dashb
 ## Outcomes and Impact
 
 The concept supported more scalable inspection automation and a more standardized view of site conditions. It also created a stronger basis for integrating multiple inspection workflows into one operational platform.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/smart-substation/substation-intelligent-inspection-system.pptx' | relative_url }})

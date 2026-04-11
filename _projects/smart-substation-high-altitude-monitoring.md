@@ -22,7 +22,3 @@ Remote and high-altitude utility projects place additional pressure on schedule 
 ## Outcomes and Impact
 
 The case validated both solution robustness and project execution readiness in a challenging region. It also demonstrated that advanced monitoring projects can be delivered successfully even where logistics and environmental conditions are demanding.
-
-## Materials
-
-- [Open project brief]({{ '/assets/files/project-cases/smart-substation/high-altitude-online-monitoring-deployment.pdf' | relative_url }})
