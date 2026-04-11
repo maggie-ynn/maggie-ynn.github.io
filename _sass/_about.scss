@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+.post .post-header .desc {
+  margin-top: 0.7rem;
+  color: var(--global-text-color);
+  font-size: 1.1rem;
+  line-height: 1.45;
+  font-weight: 500;
+  font-family: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.post article .profile {
+  width: min(27.3273%, 294.294px) !important;
+
+  .more-info {
+    p {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .post .post-header .desc {
+    font-size: 0.96rem;
+  }
+
+  .post article .profile {
+    width: min(100%, 340px);
+    margin: 0 auto 1.1rem;
+  }
+}

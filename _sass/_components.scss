@@ -28,28 +28,70 @@ ul.task-list input[type="checkbox"] {
 // Caption
 
 .caption {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--global-text-color-light);
 }
 
 // Card
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-card-border-color);
+  border-radius: 1.25rem;
+  box-shadow: var(--global-card-shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 
   .card-img {
     width: 100%;
-    padding-top: 1.25rem;
+    padding-top: 1rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figure,
+  figure picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
   }
 
   .card-title {
     color: var(--global-text-color);
+    font-size: 1.12rem;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.35rem;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--global-card-shadow-strong);
+    border-color: rgba(29, 79, 115, 0.2);
   }
 }
 
@@ -138,6 +180,7 @@ ul.task-list input[type="checkbox"] {
   .card {
     img {
       width: 100%;
+      border-radius: 0.9rem;
     }
   }
 
@@ -152,12 +195,14 @@ ul.task-list input[type="checkbox"] {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-text-color);
     border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
+    padding-top: 0.9rem;
+    padding-bottom: 0.5rem;
+    margin-top: 2.6rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    font-size: 1.55rem;
   }
 }
 
@@ -173,9 +218,10 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  padding-top: 1rem;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3.4rem;
 
     a {
       img {
@@ -211,7 +257,8 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0.88rem;
+    color: var(--global-text-color-light);
   }
 }
 

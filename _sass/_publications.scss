@@ -86,6 +86,23 @@
           font-style: normal;
         }
 
+        > em.self-author {
+          color: var(--global-theme-color);
+          border-bottom: 1px dashed currentColor;
+          font-style: normal;
+          font-weight: 600;
+
+          a {
+            color: inherit;
+            border-bottom: 1px dashed currentColor;
+
+            &:hover {
+              border-bottom-style: solid;
+              text-decoration: none;
+            }
+          }
+        }
+
         > span.more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);

@@ -6,6 +6,52 @@
   margin-top: 30px;
 }
 
+.teaching-page,
+.courses {
+  --teaching-chip-bg: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
+  --teaching-chip-border: color-mix(in srgb, var(--global-theme-color) 16%, #d9e3ec 84%);
+  --teaching-chip-text: color-mix(in srgb, var(--global-theme-color) 78%, var(--global-text-color) 22%);
+  --teaching-surface-bg:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 251, 253, 0.96) 100%);
+  --teaching-surface-border: color-mix(in srgb, var(--global-divider-color) 84%, #dbe3ea 16%);
+  --teaching-surface-shadow: 0 14px 34px color-mix(in srgb, var(--global-theme-color) 8%, transparent 92%);
+  --teaching-image-bg: #fff;
+}
+
+.teaching-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.9rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--teaching-surface-border);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(44, 62, 80, 0.06), rgba(255, 255, 255, 0) 58%),
+    var(--teaching-surface-bg);
+  box-shadow: var(--teaching-surface-shadow);
+}
+
+.teaching-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0.2rem 0 1.1rem;
+}
+
+.teaching-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--teaching-chip-border);
+  border-radius: 999px;
+  background: var(--teaching-chip-bg);
+  color: var(--teaching-chip-text);
+  font-size: 0.92rem;
+  line-height: 1.35;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--global-theme-color) 8%, transparent 92%);
+}
+
 .year {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -15,26 +61,53 @@
 
 .course-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
 .course-item {
-  border: 1px solid var(--global-divider-color);
-  border-radius: 5px;
-  padding: 15px;
-  background-color: var(--global-bg-color);
+  border: 1px solid var(--teaching-surface-border);
+  border-radius: 18px;
+  padding: 1rem;
+  background: var(--teaching-surface-bg);
+  box-shadow: var(--teaching-surface-shadow);
   transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 18px 36px color-mix(in srgb, var(--global-theme-color) 12%, transparent 88%);
   }
+}
+
+.course-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 20px;
+  align-items: start;
+}
+
+.course-body {
+  min-width: 0;
+}
+
+.course-cover-link {
+  display: block;
+}
+
+.course-cover {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid var(--global-divider-color);
+  background-color: var(--teaching-image-bg);
 }
 
 .course-title {
   margin-top: 0;
   margin-bottom: 10px;
+  color: var(--global-theme-color);
 }
 
 .course-meta {
@@ -51,10 +124,37 @@
 .course-description {
   font-size: 0.9rem;
   margin-bottom: 15px;
+  color: var(--global-text-color);
 
   p {
     margin-bottom: 0;
   }
+}
+
+html[data-theme="dark"] .teaching-page,
+html[data-theme="dark"] .courses {
+  --teaching-chip-bg: linear-gradient(180deg, rgba(33, 43, 55, 0.96) 0%, rgba(24, 32, 42, 0.96) 100%);
+  --teaching-chip-border: rgba(179, 202, 224, 0.18);
+  --teaching-chip-text: #d9e7f3;
+  --teaching-surface-bg:
+    linear-gradient(180deg, rgba(20, 27, 35, 0.98) 0%, rgba(14, 19, 26, 0.98) 100%);
+  --teaching-surface-border: rgba(201, 220, 237, 0.13);
+  --teaching-surface-shadow: 0 16px 38px rgba(0, 0, 0, 0.28);
+  --teaching-image-bg: #111820;
+}
+
+html[data-theme="dark"] .teaching-intro {
+  background:
+    linear-gradient(135deg, rgba(174, 196, 218, 0.16), rgba(18, 24, 32, 0) 58%),
+    var(--teaching-surface-bg);
+}
+
+html[data-theme="dark"] .teaching-badge {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .course-cover {
+  border-color: rgba(201, 220, 237, 0.13);
 }
 
 .course-info {
@@ -74,4 +174,15 @@
 .schedule-materials {
   padding-left: 18px;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .course-content {
+    grid-template-columns: 1fr;
+  }
+
+  .course-cover {
+    height: auto;
+    max-height: 260px;
+  }
 }

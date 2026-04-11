@@ -62,8 +62,9 @@
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {%- assign author_first_compact = author.first | replace: '.', '' | replace: ' ', '' | downcase -%}
         {% if site.scholar.last_name contains author_last_name %}
-          {% if site.scholar.first_name contains author.first %}
+          {% if site.scholar.first_name contains author.first or author_first_compact == 'n' or author_first_compact == 'nn' %}
             {% assign author_is_self = true %}
           {% endif %}
         {%- endif -%}
@@ -85,16 +86,12 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
-            {%- if entry.scholar_url -%}
-              <a href="{{ entry.scholar_url }}" style="color: #d41159;">
-                {{- author.first }}
-                {{ author_last_html -}}
-              </a>
-            {%- else -%}
+          {% assign self_author_url = entry.scholar_url | default: 'https://scholar.google.com/citations?user=TPQtOSMAAAAJ' %}
+          <em class="self-author">
+            <a href="{{ self_author_url }}">
               {{- author.first }}
               {{ author_last_html -}}
-            {%- endif -%}
+            </a>
           </em>
         {%- else -%}
           {%- if coauthor_url -%}

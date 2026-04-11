@@ -8,8 +8,76 @@ layout: default
   </style>
 {% endif %}
 
+{% if page.case_logic_step %}
+  <style type="text/css">
+    .case-logic-header {
+      margin-bottom: 0.9rem;
+    }
+
+    .case-logic-label {
+      display: inline-block;
+      margin-bottom: 0.55rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--global-text-color-light);
+    }
+
+    .case-logic-track {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .case-logic-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: rgba(148, 163, 184, 0.08);
+      color: var(--global-text-color-light);
+      font-size: 0.83rem;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .case-logic-pill.is-active {
+      border-color: rgba(37, 99, 235, 0.55);
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--global-text-color);
+      font-weight: 700;
+    }
+
+    html[data-theme='dark'] .case-logic-pill {
+      border-color: rgba(148, 163, 184, 0.22);
+      background: rgba(148, 163, 184, 0.08);
+      color: rgba(226, 232, 240, 0.76);
+    }
+
+    html[data-theme='dark'] .case-logic-pill.is-active {
+      border-color: rgba(96, 165, 250, 0.62);
+      background: rgba(59, 130, 246, 0.16);
+      color: #ffffff;
+    }
+  </style>
+{% endif %}
+
 <div class="post">
   <header class="post-header">
+    {% if page.case_logic_step %}
+      {% assign logic_steps = "Sensing|Diagnosis|Localization|Validation|Extreme Adaptation|Advanced Methods" | split: "|" %}
+      <div class="case-logic-header">
+        <div class="case-logic-label">Case Logic</div>
+        <div class="case-logic-track">
+          {% for step in logic_steps %}
+            <span class="case-logic-pill{% if step == page.case_logic_step %} is-active{% endif %}">{{ step }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>
   </header>

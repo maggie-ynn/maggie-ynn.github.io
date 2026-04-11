@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">PD project image placeholder</title>
+  <desc id="desc">Placeholder panel for partial discharge project images.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="36" fill="url(#bg)"/>
+  <rect x="84" y="84" width="1032" height="592" rx="28" fill="none" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="14 14"/>
+  <text x="600" y="350" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#475569">Signal Figure Placeholder</text>
+  <text x="600" y="408" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#64748b">Waveform or monitoring graphic to be added</text>
+</svg>

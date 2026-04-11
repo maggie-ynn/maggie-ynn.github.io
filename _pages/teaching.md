@@ -1,15 +1,30 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
+title: Teaching
+description: Technical training and knowledge transfer in power systems, AI applications, and high-voltage engineering. Courses are developed based on real-world experience in transmission systems and asset reliability.
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 5
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+<div class="teaching-page">
+<div class="teaching-intro">
+  Training content is based on practical experience across high-voltage transmission systems (110kV-500kV), with emphasis on engineering applications and field diagnostics.
+</div>
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+<div class="teaching-badges">
+  <span class="teaching-badge">Shanghai Dianji University</span>
+  <span class="teaching-badge">State Grid Shanghai Electric Power Company</span>
+  <span class="teaching-badge">Power Systems</span>
+  <span class="teaching-badge">AI Applications</span>
+  <span class="teaching-badge">High-Voltage Engineering</span>
+</div>
+
+<h2><i class="fa-solid fa-bolt"></i> Impact</h2>
+<ul>
+  <li>Trained engineers in transmission system operations and diagnostics</li>
+  <li>Bridged academic concepts with real-world substation applications</li>
+</ul>
 
 {% include courses.liquid %}
+</div>

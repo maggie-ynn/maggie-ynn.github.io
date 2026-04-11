@@ -6,19 +6,26 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+  --global-bg-color: #f4f1ea;
   --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$black-color};
-  --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$purple-color};
-  --global-hover-color: #{v.$purple-color};
+  --global-text-color: #18212b;
+  --global-text-color-light: #5f6c78;
+  --global-theme-color: #{v.$pink-color};
+  --global-hover-color: #d41159;
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-dark};
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
+  --global-footer-bg-color: #10212f;
+  --global-footer-text-color: #ecf2f7;
+  --global-footer-link-color: #f6fbff;
   --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{v.$white-color};
+  --global-divider-color: rgba(24, 33, 43, 0.12);
+  --global-card-bg-color: rgba(255, 255, 255, 0.78);
+  --global-card-border-color: rgba(249, 32, 128, 0.12);
+  --global-card-shadow: 0 22px 44px rgba(16, 33, 47, 0.08);
+  --global-card-shadow-strong: 0 26px 54px rgba(16, 33, 47, 0.14);
+  --global-elevated-bg: rgba(255, 255, 255, 0.72);
+  --global-page-glow: radial-gradient(circle at top left, rgba(93, 154, 194, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(221, 182, 119, 0.1), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(244, 241, 234, 0.96));
   --global-highlight-color: #{v.$red-color-dark};
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$black-color, "red", v.$space: rgb)},
@@ -76,19 +83,26 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{v.$grey-color-dark};
+  --global-bg-color: #0d141c;
   --global-code-bg-color: #{v.$code-bg-color-dark};
-  --global-text-color: #{v.$grey-color-light};
-  --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$cyan-color};
-  --global-hover-color: #{v.$cyan-color};
+  --global-text-color: #edf3f8;
+  --global-text-color-light: #9db0c1;
+  --global-theme-color: #ff7fb7;
+  --global-hover-color: #ffc1dc;
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-light};
-  --global-footer-text-color: #{v.$grey-color-dark};
-  --global-footer-link-color: #{v.$black-color};
+  --global-footer-bg-color: #081119;
+  --global-footer-text-color: #d7e5f0;
+  --global-footer-link-color: #eff8ff;
   --global-distill-app-color: #{v.$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{v.$grey-900};
+  --global-divider-color: rgba(201, 220, 237, 0.12);
+  --global-card-bg-color: rgba(19, 29, 40, 0.88);
+  --global-card-border-color: rgba(255, 127, 183, 0.18);
+  --global-card-shadow: 0 22px 44px rgba(0, 0, 0, 0.24);
+  --global-card-shadow-strong: 0 26px 56px rgba(0, 0, 0, 0.34);
+  --global-elevated-bg: rgba(15, 23, 33, 0.84);
+  --global-page-glow: radial-gradient(circle at top left, rgba(76, 130, 170, 0.16), transparent 26%),
+    radial-gradient(circle at top right, rgba(199, 165, 104, 0.08), transparent 22%),
+    linear-gradient(180deg, rgba(14, 22, 31, 0.96), rgba(13, 20, 28, 1));
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$white-color, "red", v.$space: rgb)},
     #{color.channel(v.$white-color, "green", v.$space: rgb)},

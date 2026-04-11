@@ -8,25 +8,34 @@
         {% assign year_courses = year_group.items | sort: 'term' %}
         {% for course in year_courses %}
           <div class="course-item">
-            <h3 class="course-title">
-              <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
-            </h3>
+            <div class="course-content">
+              <div class="course-body">
+                <h3 class="course-title">
+                  <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
+                </h3>
 
-            <div class="course-meta">
-              {% if course.term %}
-                <span class="course-term">{{ course.term }}</span>
-              {% endif %}
+                <div class="course-meta">
+                  {% if course.term %}
+                    <span class="course-term">{{ course.term }}</span>
+                  {% endif %}
 
-              {% if course.instructor %}
-                <span class="course-instructor">{{ course.instructor }}</span>
+                  {% if course.instructor %}
+                    <span class="course-instructor">{{ course.instructor }}</span>
+                  {% endif %}
+                </div>
+
+                {% if course.description %}
+                  <div class="course-description">
+                    {{ course.description | markdownify }}
+                  </div>
+                {% endif %}
+              </div>
+              {% if course.image %}
+                <a href="{{ course.url | relative_url }}" class="course-cover-link" aria-label="View {{ course.title }}">
+                  <img src="{{ course.image | relative_url }}" alt="{{ course.title }} cover" class="course-cover" />
+                </a>
               {% endif %}
             </div>
-
-            {% if course.description %}
-              <div class="course-description">
-                {{ course.description | markdownify }}
-              </div>
-            {% endif %}
           </div>
         {% endfor %}
       </div>
