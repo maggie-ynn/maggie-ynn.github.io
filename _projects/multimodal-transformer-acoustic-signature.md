@@ -2,7 +2,7 @@
 layout: page
 title: Transformer Acoustic Signature Analysis
 description: Acoustic signature interpretation case for transformer anomaly recognition and inspection decision support.
-img: assets/img/project-cases/multimodal-ai/transformer-acoustic-signature-analysis.jpg
+img: assets/img/project-cases/multimodal-ai/transformer-field-inspection.jpg
 importance: 2
 category: "3-Multi-modal Imaging & AI Inspection"
 ---

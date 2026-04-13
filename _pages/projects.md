@@ -466,7 +466,7 @@ _styles: >
     <p class="workflow-hint">Screening → Localization → Validation → Maintenance</p>
   {% endif %}
   {% if anchor_id == "ai" %}
-    <p class="workflow-hint">Acoustic interpretation → PD monitoring → Cross-sensor fusion → Engineering triage</p>
+    <p class="workflow-hint">Signal interpretation → Continuous monitoring → Multi-sensor fusion → Engineering decision</p>
   {% endif %}
   {% if anchor_id == "drone" %}
     <div class="autonomous-flow" aria-label="Autonomous inspection system flow">
@@ -504,21 +504,21 @@ _styles: >
   </div>
   {% elsif anchor_id == "ai" %}
   <div class="ai-group-heading">Signal Interpretation &amp; Acoustic Diagnostics</div>
-  <p class="ai-group-note">Cases that turn acoustic signatures and ultrasonic response into interpretable engineering evidence.</p>
+  <p class="ai-group-note">Front-end cases focused on turning acoustic and ultrasonic sensing into readable fault evidence, from transformer behavior to cable branch-box anomalies.</p>
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in sorted_projects limit: 3 %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
   <div class="ai-group-heading">PD Monitoring &amp; Verification</div>
-  <p class="ai-group-note">A progression from time-series monitoring to embedded UHF detection and full closed-loop validation.</p>
+  <p class="ai-group-note">A monitoring chain that moves from trend discovery to embedded online detection and finally to before/after engineering verification.</p>
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in sorted_projects offset: 3 limit: 3 %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
   <div class="ai-group-heading">Multi-modal Fusion &amp; Decision Support</div>
-  <p class="ai-group-note">Platform-level cases that combine sensing channels and present outputs in a form that supports review and action.</p>
+  <p class="ai-group-note">Platform-oriented work that fuses infrared, visual, acoustic, and structured outputs into inspection views that support triage and field decisions.</p>
   <div class="row row-cols-1 row-cols-md-3 ai-tertiary-grid">
     {% for project in sorted_projects offset: 6 %}
       {% include projects.liquid %}

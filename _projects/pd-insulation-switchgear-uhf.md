@@ -2,7 +2,7 @@
 layout: page
 title: UHF Online PD Detection
 description: Embedded UHF sensing workflow for internal partial discharge detection and real-time warning.
-img: assets/img/project-cases/multimodal-ai/multimodal-sixth-slot.jpg
+img: assets/img/project-cases/pd-insulation/switchgear-uhf-online-detection.png
 importance: 5
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
