@@ -270,6 +270,17 @@ _styles: >
     min-height: 3.8em;
   }
 
+  .ai-tertiary-grid > .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .ai-tertiary-grid .card figure,
+  .ai-tertiary-grid .card figure picture,
+  .ai-tertiary-grid .card .card-img-top {
+    width: 88%;
+  }
+
   .projects .card figure,
   .projects .card figure picture,
   .projects .card .card-img-top {
@@ -371,8 +382,16 @@ _styles: >
     .cable-primary-grid figure picture,
     .cable-secondary-grid .card-img-top,
     .cable-secondary-grid figure,
-    .cable-secondary-grid figure picture {
+    .cable-secondary-grid figure picture,
+    .ai-tertiary-grid .card-img-top,
+    .ai-tertiary-grid figure,
+    .ai-tertiary-grid figure picture {
       min-height: 0;
+    }
+
+    .ai-tertiary-grid > .col {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 ---
