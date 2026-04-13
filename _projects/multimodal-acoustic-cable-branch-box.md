@@ -2,7 +2,7 @@
 layout: page
 title: Cable Branch Box Acoustic Imaging
 description: Acoustic imaging case for locating hidden defects in a 10kV cable branch box and improving field diagnosis clarity.
-img: assets/img/project-cases/multimodal-ai/acoustic-cable-branch-box.jpg
+img: assets/img/project-cases/multimodal-ai/multimodal-first-cover.png
 importance: 3
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
