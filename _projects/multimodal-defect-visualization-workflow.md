@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Multi-Modal Inspection Visualization and Triage
+title: Multi-modal Inspection Visualization
 description: Visualization workflow for turning multi-sensor inspection data into clearer defect triage and engineering evidence.
 img: assets/img/project-cases/multimodal-ai/multimodal-defect-visualization.jpg
-importance: 4
+importance: 8
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
 

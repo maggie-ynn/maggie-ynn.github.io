@@ -1,9 +1,9 @@
 ---
 layout: page
-title: GIS PD Diagnosis - UHF Monitoring - Closed-loop Verification
+title: GIS PD Verification Workflow
 description: GIS partial discharge workflow linking UHF monitoring, intervention, and before/after validation.
 img: assets/img/project-cases/multimodal-ai/multimodal-sixth-cover.png
-importance: 5
+importance: 6
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
 

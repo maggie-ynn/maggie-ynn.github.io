@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acoustic Sensing - Transformer Condition - Multi-Fault Identification
+title: Acoustic Transformer Fault Interpretation
 description: Acoustic fingerprinting and AI feature extraction for transformer anomaly discrimination.
 img: assets/img/project-cases/multimodal-ai/multimodal-second-cover.jpg
 importance: 1

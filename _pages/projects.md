@@ -251,6 +251,25 @@ _styles: >
     text-transform: none;
   }
 
+  .ai-group-heading {
+    margin: 1.15rem 0 0.35rem;
+    color: var(--global-text-color);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .ai-group-note {
+    margin: 0 0 0.85rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .ai-tertiary-grid .card-text {
+    min-height: 3.8em;
+  }
+
   .projects .card figure,
   .projects .card figure picture,
   .projects .card .card-img-top {
@@ -427,6 +446,9 @@ _styles: >
   {% if anchor_id == "cable" %}
     <p class="workflow-hint">Screening → Localization → Validation → Maintenance</p>
   {% endif %}
+  {% if anchor_id == "ai" %}
+    <p class="workflow-hint">Acoustic interpretation → PD monitoring → Cross-sensor fusion → Engineering triage</p>
+  {% endif %}
   {% if anchor_id == "drone" %}
     <div class="autonomous-flow" aria-label="Autonomous inspection system flow">
       <div class="autonomous-flow-step">Drone sensing</div>
@@ -458,6 +480,28 @@ _styles: >
   <div class="cable-group-heading">Advanced Methods &amp; Engineering Validation</div>
   <div class="row row-cols-1 row-cols-md-3 cable-secondary-grid">
     {% for project in sorted_projects offset: 3 %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+  {% elsif anchor_id == "ai" %}
+  <div class="ai-group-heading">Signal Interpretation &amp; Acoustic Diagnostics</div>
+  <p class="ai-group-note">Cases that turn acoustic signatures and ultrasonic response into interpretable engineering evidence.</p>
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for project in sorted_projects limit: 3 %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+  <div class="ai-group-heading">PD Monitoring &amp; Verification</div>
+  <p class="ai-group-note">A progression from time-series monitoring to embedded UHF detection and full closed-loop validation.</p>
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for project in sorted_projects offset: 3 limit: 3 %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+  <div class="ai-group-heading">Multi-modal Fusion &amp; Decision Support</div>
+  <p class="ai-group-note">Platform-level cases that combine sensing channels and present outputs in a form that supports review and action.</p>
+  <div class="row row-cols-1 row-cols-md-2 ai-tertiary-grid">
+    {% for project in sorted_projects offset: 6 %}
       {% include projects.liquid %}
     {% endfor %}
   </div>

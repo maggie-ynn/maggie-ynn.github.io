@@ -1,9 +1,9 @@
 ---
 layout: page
-title: UHF Online Detection - Internal Discharge - Real-time Alarm System
+title: UHF Online PD Detection
 description: Embedded UHF sensing workflow for internal partial discharge detection and real-time warning.
 img: assets/img/project-cases/multimodal-ai/multimodal-sixth-slot.jpg
-importance: 3
+importance: 5
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
 

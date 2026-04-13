@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Continuous Monitoring - Switchgear PD - Trend-based Risk Detection
+title: Continuous PD Monitoring for Switchgear
 description: Multi-channel time-series PD monitoring for early defect trend recognition in switchgear.
 img: assets/img/project-cases/multimodal-ai/multimodal-fourth-cover.png
-importance: 2
+importance: 4
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
 
