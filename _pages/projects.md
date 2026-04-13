@@ -500,7 +500,7 @@ _styles: >
   </div>
   <div class="ai-group-heading">Multi-modal Fusion &amp; Decision Support</div>
   <p class="ai-group-note">Platform-level cases that combine sensing channels and present outputs in a form that supports review and action.</p>
-  <div class="row row-cols-1 row-cols-md-2 ai-tertiary-grid">
+  <div class="row row-cols-1 row-cols-md-3 ai-tertiary-grid">
     {% for project in sorted_projects offset: 6 %}
       {% include projects.liquid %}
     {% endfor %}
