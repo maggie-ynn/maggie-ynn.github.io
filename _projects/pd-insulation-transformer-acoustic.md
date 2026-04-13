@@ -3,7 +3,7 @@ layout: page
 title: Acoustic Transformer Fault Interpretation
 description: Acoustic fingerprinting and AI feature extraction for transformer anomaly discrimination.
 img: assets/img/project-cases/multimodal-ai/transformer-acoustic-fingerprint.png
-importance: 1
+importance: 2
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
 
