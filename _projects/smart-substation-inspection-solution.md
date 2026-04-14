@@ -2,7 +2,7 @@
 layout: page
 title: Smart Substation Inspection Architecture
 description: Inspection-architecture case for connected monitoring, digital workflows, and smarter substation operations.
-img: assets/img/project-cases/smart-substation/smart-substation-3.png
+img: assets/img/project-cases/smart-substation/smart-substation-1-replaced.png
 importance: 1
 category: "4-smart substation& online monitoring"
 ---
