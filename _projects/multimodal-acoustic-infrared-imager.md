@@ -2,7 +2,7 @@
 layout: page
 title: Acoustic-Infrared Inspection Platform
 description: Integrated acoustic and infrared inspection platform for faster field screening and stronger defect verification.
-img: assets/img/project-cases/multimodal-ai/ir-visible-ai-fusion.png
+img: assets/img/project-cases/multimodal-ai/acoustic-infrared-integrated-imager.jpg
 importance: 7
 category: "3-Multi-modal Imaging & AI Inspection"
 ---
