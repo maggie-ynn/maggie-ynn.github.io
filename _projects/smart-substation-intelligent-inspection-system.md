@@ -2,7 +2,7 @@
 layout: page
 title: Intelligent Substation Inspection Platform
 description: Inspection-platform concept for automated substation inspection, monitoring integration, and stronger operational visibility.
-img: assets/img/project-cases/smart-substation/smart-substation-2.png
+img: assets/img/project-cases/smart-substation/smart-substation-4-updated.png
 importance: 4
 category: "4-smart substation& online monitoring"
 ---
