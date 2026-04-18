@@ -463,7 +463,7 @@ description: Professional experience, education, publications, and technical str
       </div>
       <div class="cv-link-item">
         <strong>LinkedIn</strong>
-        <a href="https://www.linkedin.com/in/maggie-yan-612a01385/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/maggie-yan-612a01385/</a>
+        <a href="https://www.linkedin.com/in/maggie-nnyan/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/maggie-nnyan/</a>
       </div>
       <div class="cv-link-item">
         <strong>Google Scholar</strong>
